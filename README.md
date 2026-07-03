@@ -1143,6 +1143,34 @@ LLM token cost
 + Support team
 ```
 
+| Cost bucket   | What to include                                               |
+| ------------- | ------------------------------------------------------------- |
+| LLM inference | Input tokens, output tokens, cached tokens if applicable      |
+| Embeddings    | Document indexing, query embeddings, re-indexing              |
+| Vector DB     | Storage, compute, search/query cost                           |
+| Orchestration | Agent runtime, workflow engine, tool-calling layer            |
+| Hosting       | App servers, containers, serverless, API gateway              |
+| Monitoring    | Logs, traces, prompt observability, dashboards                |
+| Evaluation    | Regression prompt sets, hallucination checks, quality scoring |
+| Guardrails    | PII masking, policy checks, content filters                   |
+| Security      | Access control, audit logs, secrets, vulnerability scanning   |
+| Human review  | HITL queue, SME validation, fallback support                  |
+| Maintenance   | Prompt tuning, model upgrades, KB refresh, retraining         |
+| Support       | L2/L3 support, incident handling, runbook updates             |
+
+Total Agent Monthly Run Cost =
+Token Cost
++ Platform Cost
++ Data / Vector Cost
++ Monitoring Cost
++ Human Review Cost
++ Support & Maintenance Cost
+
+Do not price AI agents only on build effort.
+Agent proposals need both:
+1. Build cost
+2. Recurring run cost / TCO 
+
 ---
 
 # 31. Transition / KT Math
